@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		0019E82067DF52C8B4CC85D8 /* Pods_HealthyHarvest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FF650114685FDF0077CDB8BC /* Pods_HealthyHarvest.framework */; };
+		2D6B72102026778B008256F0 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D6B720F2026778B008256F0 /* SearchViewController.swift */; };
+		2D6B721220267F01008256F0 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2D6B721120267F01008256F0 /* GoogleService-Info.plist */; };
 		A10E524D2024CC590084B744 /* Search.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A10E524B2024CC590084B744 /* Search.storyboard */; };
 		A10E524F2024CC820084B744 /* Events.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A10E524E2024CC820084B744 /* Events.storyboard */; };
 		A10E52522024CCAB0084B744 /* List.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A10E52502024CCAB0084B744 /* List.storyboard */; };
@@ -23,6 +25,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2D6B720F2026778B008256F0 /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
+		2D6B721120267F01008256F0 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		37491D21151E13A58E42A0CD /* Pods-HealthyHarvest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HealthyHarvest.release.xcconfig"; path = "Pods/Target Support Files/Pods-HealthyHarvest/Pods-HealthyHarvest.release.xcconfig"; sourceTree = "<group>"; };
 		A10E524C2024CC590084B744 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Search.storyboard; sourceTree = "<group>"; };
 		A10E524E2024CC820084B744 /* Events.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Events.storyboard; sourceTree = "<group>"; };
@@ -86,6 +90,7 @@
 			children = (
 				A16BFBF22003D744004317C5 /* AppDelegate.swift */,
 				A16BFBF42003D744004317C5 /* ViewController.swift */,
+				2D6B720F2026778B008256F0 /* SearchViewController.swift */,
 				A16BFBF62003D744004317C5 /* Main.storyboard */,
 				A10E52502024CCAB0084B744 /* List.storyboard */,
 				A10E524E2024CC820084B744 /* Events.storyboard */,
@@ -96,6 +101,7 @@
 				A16BFBFC2003D744004317C5 /* Assets.xcassets */,
 				A16BFBFE2003D744004317C5 /* LaunchScreen.storyboard */,
 				A16BFC012003D744004317C5 /* Info.plist */,
+				2D6B721120267F01008256F0 /* GoogleService-Info.plist */,
 				A16BFBF92003D744004317C5 /* HealthyHarvest.xcdatamodeld */,
 			);
 			path = HealthyHarvest;
@@ -177,6 +183,7 @@
 				A10E52522024CCAB0084B744 /* List.storyboard in Resources */,
 				A16BFBF82003D744004317C5 /* Main.storyboard in Resources */,
 				A10E524D2024CC590084B744 /* Search.storyboard in Resources */,
+				2D6B721220267F01008256F0 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -250,6 +257,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2D6B72102026778B008256F0 /* SearchViewController.swift in Sources */,
 				A10E52562024FFAE0084B744 /* CoreDataHelper.swift in Sources */,
 				A16BFBF52003D744004317C5 /* ViewController.swift in Sources */,
 				A16BFBFB2003D744004317C5 /* HealthyHarvest.xcdatamodeld in Sources */,
