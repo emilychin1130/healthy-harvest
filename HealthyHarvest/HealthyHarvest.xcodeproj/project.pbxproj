@@ -13,6 +13,7 @@
 		A10E52522024CCAB0084B744 /* List.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A10E52502024CCAB0084B744 /* List.storyboard */; };
 		A10E52542024F8F30084B744 /* ListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A10E52532024F8F30084B744 /* ListViewController.swift */; };
 		A10E52562024FFAE0084B744 /* CoreDataHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = A10E52552024FFAE0084B744 /* CoreDataHelper.swift */; };
+		A10E525820267E370084B744 /* ListTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A10E525720267E370084B744 /* ListTableCell.swift */; };
 		A16BFBF32003D744004317C5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A16BFBF22003D744004317C5 /* AppDelegate.swift */; };
 		A16BFBF52003D744004317C5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A16BFBF42003D744004317C5 /* ViewController.swift */; };
 		A16BFBF82003D744004317C5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A16BFBF62003D744004317C5 /* Main.storyboard */; };
@@ -28,6 +29,7 @@
 		A10E52512024CCAB0084B744 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/List.storyboard; sourceTree = "<group>"; };
 		A10E52532024F8F30084B744 /* ListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListViewController.swift; sourceTree = "<group>"; };
 		A10E52552024FFAE0084B744 /* CoreDataHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreDataHelper.swift; sourceTree = "<group>"; };
+		A10E525720267E370084B744 /* ListTableCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListTableCell.swift; sourceTree = "<group>"; };
 		A16BFBEF2003D744004317C5 /* HealthyHarvest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HealthyHarvest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A16BFBF22003D744004317C5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A16BFBF42003D744004317C5 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -89,6 +91,7 @@
 				A10E524E2024CC820084B744 /* Events.storyboard */,
 				A10E524B2024CC590084B744 /* Search.storyboard */,
 				A10E52532024F8F30084B744 /* ListViewController.swift */,
+				A10E525720267E370084B744 /* ListTableCell.swift */,
 				A10E52552024FFAE0084B744 /* CoreDataHelper.swift */,
 				A16BFBFC2003D744004317C5 /* Assets.xcassets */,
 				A16BFBFE2003D744004317C5 /* LaunchScreen.storyboard */,
@@ -251,6 +254,7 @@
 				A16BFBF52003D744004317C5 /* ViewController.swift in Sources */,
 				A16BFBFB2003D744004317C5 /* HealthyHarvest.xcdatamodeld in Sources */,
 				A10E52542024F8F30084B744 /* ListViewController.swift in Sources */,
+				A10E525820267E370084B744 /* ListTableCell.swift in Sources */,
 				A16BFBF32003D744004317C5 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

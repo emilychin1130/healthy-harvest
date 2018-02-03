@@ -36,7 +36,7 @@
                     <tabBarItem key="tabBarItem" title="Item" id="4HJ-tC-IbH"/>
                     <toolbarItems/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="sX6-u8-04k">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="sX6-u8-04k">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
