@@ -11,7 +11,7 @@ import UIKit
 
 class ListViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
     
-    @IBOutlet weak var ListTableView: UITableView!
+    @IBOutlet weak var tableView: UITableView!
     
     @IBAction func unwindToListHabitsViewController(_ segue: UIStoryboardSegue) {
         
@@ -23,13 +23,13 @@ class ListViewController: UIViewController, UITableViewDataSource, UITableViewDe
         
         items = CoreDataHelper.retrieveItems()
         
-        ListTableView.delegate = self
-        ListTableView.dataSource = self
+        tableView.delegate = self
+        tableView.dataSource = self
     }
 
     var items = [Item]() {
         didSet {
-            ListTableView.reloadData()
+            tableView.reloadData()
         }
     }
     
@@ -78,7 +78,7 @@ class ListViewController: UIViewController, UITableViewDataSource, UITableViewDe
  //               general.points += Int(habit.days)
  //           }
 //            self.numberOfPointsLabel.reloadInputViews()
-            self.ListTableView.reloadData()
+            self.tableView.reloadData()
         }
         CoreDataHelper.saveItem()
     }
@@ -111,5 +111,32 @@ class ListViewController: UIViewController, UITableViewDataSource, UITableViewDe
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 75
     }
+    
+    // SEGUE
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if let identifier = segue.identifier {
+            if identifier == "displayItem" {
+                
+                let indexPath = tableView.indexPathForSelectedRow!
+                
+                let item = items[indexPath.row]
+                
+                let listInformationViewController = segue.destination as! ListInformationViewController
+                
+                listInformationViewController.item = item
+                
+//            } else if identifier == "addItem" {
+//                let list = CoreDataHelper.retrieveGeneral()
+//                let general = list[0]
+//                if habits.count >= Int(general.rows) {
+//                    let alert = UIAlertController(title: "No More Slots", message: "Buy more at the shop or delete some existing habits!", preferredStyle: UIAlertControllerStyle.alert)
+//                    alert.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.default, handler: {(action) in alert.dismiss(animated: true, completion: nil) } ) )
+//                    self.present(alert, animated: true, completion: nil)
+//                }
+            }
+        }
+    }
+
     
 }

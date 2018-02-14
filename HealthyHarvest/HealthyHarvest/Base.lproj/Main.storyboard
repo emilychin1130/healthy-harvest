@@ -28,30 +28,30 @@
             </objects>
             <point key="canvasLocation" x="66" y="159"/>
         </scene>
-        <!--SearchViewController-->
+        <!--Search-->
         <scene sceneID="BjM-Z9-gH2">
             <objects>
-                <viewControllerPlaceholder storyboardName="SearchViewController" id="vT5-gW-bcP" sceneMemberID="viewController">
+                <viewControllerPlaceholder storyboardName="Search" id="vT5-gW-bcP" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Item" id="tb3-B5-zq9"/>
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ihw-vw-aja" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1021" y="-168"/>
         </scene>
-        <!--EventsStoryBoard-->
+        <!--Events-->
         <scene sceneID="wFx-s6-ZzM">
             <objects>
-                <viewControllerPlaceholder storyboardName="EventsStoryBoard" id="Gu9-kI-nMS" sceneMemberID="viewController">
+                <viewControllerPlaceholder storyboardName="Events" id="Gu9-kI-nMS" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Item" id="TLt-ri-C6Q"/>
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3ZF-bP-ClW" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1021" y="488"/>
         </scene>
-        <!--ListStoryBoard-->
+        <!--List-->
         <scene sceneID="c2H-Ic-7pQ">
             <objects>
-                <viewControllerPlaceholder storyboardName="ListStoryBoard" id="AQ9-yg-uZa" sceneMemberID="viewController">
+                <viewControllerPlaceholder storyboardName="List" id="AQ9-yg-uZa" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Item" id="7m5-mM-B3D"/>
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="plU-6V-L43" userLabel="First Responder" sceneMemberID="firstResponder"/>

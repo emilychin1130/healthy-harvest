@@ -158,13 +158,8 @@
                     <tabBarItem key="tabBarItem" title="Item" id="4HJ-tC-IbH"/>
                     <toolbarItems/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
-<<<<<<< HEAD
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="sX6-u8-04k">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
-=======
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="sX6-u8-04k">
-                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
->>>>>>> 394ed467d5736e88793b7dfe6e2de55971e3120f
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>

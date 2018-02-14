@@ -3,7 +3,7 @@
 //  HealthyHarvest
 //
 //  Created by Emily Chin on 1/8/18.
-//  Copyright © 2018 Emily Chin. All rights reserved.
+//  Copyright © 2018 Emily Chin. All rights reserved. 
 //
 
 import UIKit
@@ -12,26 +12,15 @@ import Firebase
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
-    
+
     var window: UIWindow?
-    
+
+
     func application(_ application: UIApplication,
                      didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?)
         -> Bool {
             FirebaseApp.configure()
             return true
-    }
-}
-
-@UIApplicationMain
-class AppDelegate: UIResponder, UIApplicationDelegate {
-
-    var window: UIWindow?
-
-
-    func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
-        // Override point for customization after application launch.
-        return true
     }
 
     func applicationWillResignActive(_ application: UIApplication) {

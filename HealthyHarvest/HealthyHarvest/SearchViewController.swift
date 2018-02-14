@@ -6,35 +6,26 @@
 //  Copyright © 2018 Emily Chin. All rights reserved.
 //
 
-<<<<<<< HEAD
-//import Foundation
-//import UIKit
-=======
 import Foundation
 import UIKit
->>>>>>> 4612f8fbc31a77acdb9ad348c9db44b06715f3dd
 //import GooglePlaces
 //import GoogleMaps
 //import Alamofire
 //import SwiftyJSON
-<<<<<<< HEAD
 import FirebaseDatabase
-//
+
+
 //class HomeViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
-//    
-=======
-import FirebaseDatabase
+
 
 //class HomeViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
 //
->>>>>>> 4612f8fbc31a77acdb9ad348c9db44b06715f3dd
 //    var displayArr = [Place]() {
 //        didSet {
 //            self.placesTableView.reloadData()
 //        }
 //    }
-<<<<<<< HEAD
-//    
+//
 //    var myPlaces = EventBuilder()
 //    
 //    var selectedLongitude: Double = 0.0
@@ -43,7 +34,6 @@ import FirebaseDatabase
 //    
 //    // MARK: - Subviews
 //    
-=======
 //
 //    var myPlaces = EventBuilder()
 //
@@ -53,7 +43,6 @@ import FirebaseDatabase
 //
 //    // MARK: - Subviews
 //
->>>>>>> 4612f8fbc31a77acdb9ad348c9db44b06715f3dd
 //    @IBOutlet weak var creditsButton: UIButton!
 //    @IBOutlet var nextButton: UIBarButtonItem!
 //    @IBOutlet weak var locationTextField: UITextField!
@@ -71,7 +60,7 @@ import FirebaseDatabase
 //    @IBOutlet weak var poolsLabel: UILabel!
 //    @IBOutlet weak var beachesLabel: UILabel!
 //    @IBOutlet weak var natureImageView: UIImageView!
-<<<<<<< HEAD
+
 //    
 //    
 //    // MARK: - IBActions
@@ -87,7 +76,7 @@ import FirebaseDatabase
 //        navigationController?.pushViewController(myVC, animated: true)
 //    }
 //    
-=======
+
 //
 //
 //    // MARK: - IBActions
@@ -103,7 +92,7 @@ import FirebaseDatabase
 //        navigationController?.pushViewController(myVC, animated: true)
 //    }
 //
->>>>>>> 4612f8fbc31a77acdb9ad348c9db44b06715f3dd
+
 //    func fetchActivities(location: String, radius: Int, type: String, keyword: String, key: String) {
 //        var url = "https://maps.googleapis.com/maps/api/place/nearbysearch/json?"
 //        url += "location=\(location)"
@@ -111,15 +100,14 @@ import FirebaseDatabase
 //        url += "&type=\(type)"
 //        url += "&keyword=\(keyword)"
 //        url += "&key=\(key)"
-<<<<<<< HEAD
-//        
+//
 //        print(url)
 //        
 //        Alamofire.request(url).responseJSON { (response) in
 //            let result = response.result.value as! [String: Any]
 //            let placeArr = result["results"] as! NSArray
 //            
-=======
+
 //
 //        print(url)
 //
@@ -127,12 +115,12 @@ import FirebaseDatabase
 //            let result = response.result.value as! [String: Any]
 //            let placeArr = result["results"] as! NSArray
 //
->>>>>>> 4612f8fbc31a77acdb9ad348c9db44b06715f3dd
+
 //            var list = [Place]()
 //            let space = ""
 //            for place in placeArr {
 //                let info = place as! [String: Any]
-<<<<<<< HEAD
+
 //                
 //                let x = "\(info["vicinity"] ?? space)"
 //                
@@ -152,7 +140,7 @@ import FirebaseDatabase
 //    
 //    @IBAction func lakesButtonTapped(_ sender: UIButton) {
 //        
-=======
+
 //
 //                let x = "\(info["vicinity"] ?? space)"
 //
@@ -172,18 +160,14 @@ import FirebaseDatabase
 //
 //    @IBAction func lakesButtonTapped(_ sender: UIButton) {
 //
->>>>>>> 4612f8fbc31a77acdb9ad348c9db44b06715f3dd
+
 //        lakesButton.isSelected = true
 //        parksButton.isSelected = false
 //        campgroundsButton.isSelected = false
 //        trailsButton.isSelected = false
 //        poolsButton.isSelected = false
 //        beachesButton.isSelected = false
-<<<<<<< HEAD
-//        
-=======
-//
->>>>>>> 4612f8fbc31a77acdb9ad348c9db44b06715f3dd
+
 //        fetchActivities(
 //            location: "\(selectedLatitude),\(selectedLongitude)",
 //            radius: 30000,
@@ -191,26 +175,21 @@ import FirebaseDatabase
 //            keyword: "lake",
 //            key: activitiesKey)
 //    }
-<<<<<<< HEAD
-//    
+
 //    @IBAction func parksButtonTapped(_ sender: UIButton) {
 //        
-=======
+
 //
 //    @IBAction func parksButtonTapped(_ sender: UIButton) {
 //
->>>>>>> 4612f8fbc31a77acdb9ad348c9db44b06715f3dd
+
 //        parksButton.isSelected = true
 //        lakesButton.isSelected = false
 //        campgroundsButton.isSelected = false
 //        trailsButton.isSelected = false
 //        poolsButton.isSelected = false
 //        beachesButton.isSelected = false
-<<<<<<< HEAD
-//        
-=======
-//
->>>>>>> 4612f8fbc31a77acdb9ad348c9db44b06715f3dd
+
 //        fetchActivities(
 //            location: "\(selectedLatitude),\(selectedLongitude)",
 //            radius: 30000,
@@ -218,26 +197,18 @@ import FirebaseDatabase
 //            keyword: "park",
 //            key: activitiesKey)
 //    }
-<<<<<<< HEAD
-//    
+
 //    @IBAction func campgroundsButtonTapped(_ sender: UIButton) {
-//        
-=======
+
 //
 //    @IBAction func campgroundsButtonTapped(_ sender: UIButton) {
-//
->>>>>>> 4612f8fbc31a77acdb9ad348c9db44b06715f3dd
 //        campgroundsButton.isSelected = true
 //        parksButton.isSelected = false
 //        lakesButton.isSelected = false
 //        trailsButton.isSelected = false
 //        poolsButton.isSelected = false
 //        beachesButton.isSelected = false
-<<<<<<< HEAD
-//        
-=======
-//
->>>>>>> 4612f8fbc31a77acdb9ad348c9db44b06715f3dd
+
 //        fetchActivities(
 //            location: "\(selectedLatitude),\(selectedLongitude)",
 //            radius: 30000,
@@ -245,26 +216,20 @@ import FirebaseDatabase
 //            keyword: "campground",
 //            key: activitiesKey)
 //    }
-<<<<<<< HEAD
-//    
+
 //    @IBAction func beachesButtonTapped(_ sender: UIButton) {
-//        
-=======
+
 //
 //    @IBAction func beachesButtonTapped(_ sender: UIButton) {
 //
->>>>>>> 4612f8fbc31a77acdb9ad348c9db44b06715f3dd
+
 //        campgroundsButton.isSelected = false
 //        parksButton.isSelected = false
 //        lakesButton.isSelected = false
 //        trailsButton.isSelected = false
 //        poolsButton.isSelected = false
 //        beachesButton.isSelected = true
-<<<<<<< HEAD
-//        
-=======
-//
->>>>>>> 4612f8fbc31a77acdb9ad348c9db44b06715f3dd
+
 //        fetchActivities(
 //            location: "\(selectedLatitude),\(selectedLongitude)",
 //            radius: 30000,
@@ -272,26 +237,21 @@ import FirebaseDatabase
 //            keyword: "beach",
 //            key: activitiesKey)
 //    }
-<<<<<<< HEAD
-//    
+
 //    @IBAction func trailsButtonTapped(_ sender: UIButton) {
 //        
-=======
+
 //
 //    @IBAction func trailsButtonTapped(_ sender: UIButton) {
 //
->>>>>>> 4612f8fbc31a77acdb9ad348c9db44b06715f3dd
+
 //        campgroundsButton.isSelected = false
 //        parksButton.isSelected = false
 //        lakesButton.isSelected = false
 //        trailsButton.isSelected = true
 //        poolsButton.isSelected = false
 //        beachesButton.isSelected = false
-<<<<<<< HEAD
-//        
-=======
-//
->>>>>>> 4612f8fbc31a77acdb9ad348c9db44b06715f3dd
+
 //        fetchActivities(
 //            location: "\(selectedLatitude),\(selectedLongitude)",
 //            radius: 30000,
@@ -299,26 +259,21 @@ import FirebaseDatabase
 //            keyword: "trail",
 //            key: activitiesKey)
 //    }
-<<<<<<< HEAD
-//    
+
 //    @IBAction func poolsButtonTapped(_ sender: UIButton) {
 //        
-=======
+
 //
 //    @IBAction func poolsButtonTapped(_ sender: UIButton) {
 //
->>>>>>> 4612f8fbc31a77acdb9ad348c9db44b06715f3dd
+
 //        campgroundsButton.isSelected = false
 //        parksButton.isSelected = false
 //        lakesButton.isSelected = false
 //        trailsButton.isSelected = false
 //        poolsButton.isSelected = true
 //        beachesButton.isSelected = false
-<<<<<<< HEAD
-//        
-=======
-//
->>>>>>> 4612f8fbc31a77acdb9ad348c9db44b06715f3dd
+
 //        fetchActivities(
 //            location: "\(selectedLatitude),\(selectedLongitude)",
 //            radius: 30000,
@@ -326,33 +281,26 @@ import FirebaseDatabase
 //            keyword: "pool",
 //            key: activitiesKey)
 //    }
-<<<<<<< HEAD
-//    
+
 //    @IBAction func editingSearchBegin(_ sender: UITextField) {
 //        
-=======
+
 //
 //    @IBAction func editingSearchBegin(_ sender: UITextField) {
 //
->>>>>>> 4612f8fbc31a77acdb9ad348c9db44b06715f3dd
 //        // Present the Autocomplete view controller when the button is pressed.
 //        let autocompleteController = GMSAutocompleteViewController()
 //        autocompleteController.delegate = self
 //        present(autocompleteController, animated: true, completion: nil)
 //    }
-<<<<<<< HEAD
-//    
-=======
-//
->>>>>>> 4612f8fbc31a77acdb9ad348c9db44b06715f3dd
+
 //    override func viewDidLoad() {
 //        super.viewDidLoad()
 //        self.nextButton.isEnabled = false
 //        placesTableView.delegate = self
 //        placesTableView.dataSource = self
 //    }
-<<<<<<< HEAD
-//    
+
 //    override func viewWillAppear(_ animated: Bool) {
 //        let generateRandomImage = Int(arc4random_uniform(4))+1
 //        let imageName = "ocean\(generateRandomImage)"
@@ -371,7 +319,7 @@ import FirebaseDatabase
 //        return 100
 //    }
 //    
-=======
+
 //
 //    override func viewWillAppear(_ animated: Bool) {
 //        let generateRandomImage = Int(arc4random_uniform(4))+1
@@ -391,29 +339,25 @@ import FirebaseDatabase
 //        return 100
 //    }
 //
->>>>>>> 4612f8fbc31a77acdb9ad348c9db44b06715f3dd
 //    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
 //        let cellIdentifier = "PlacesTableViewCell"
 //        guard let cell = tableView.dequeueReusableCell(withIdentifier: cellIdentifier, for: indexPath) as? PlacesTableViewCell  else {
 //            fatalError("The dequeued cell is not an instance of PlacesTableViewCell.")
 //        }
-<<<<<<< HEAD
+
 //        
 //        let place = displayArr[indexPath.row]
-//        
-=======
+
 //
 //        let place = displayArr[indexPath.row]
 //
->>>>>>> 4612f8fbc31a77acdb9ad348c9db44b06715f3dd
+
 //        if place.isChecked == true {
 //            cell.accessoryType = .checkmark
 //        } else {
 //            cell.accessoryType = .none
 //        }
-<<<<<<< HEAD
-//        
-//        
+
 //        //Loop through place.types and add to a new variable sting to display down here \/
 //        cell.placesLabel.text = "\(place.name)"
 //        cell.placeAddressLabel.text = "\(place.vicinity)"
@@ -422,7 +366,7 @@ import FirebaseDatabase
 //        return cell
 //    }
 //    
-=======
+
 //
 //
 //        //Loop through place.types and add to a new variable sting to display down here \/
@@ -433,21 +377,21 @@ import FirebaseDatabase
 //        return cell
 //    }
 //
->>>>>>> 4612f8fbc31a77acdb9ad348c9db44b06715f3dd
+
 //    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
 //        if let cell = tableView.cellForRow(at: indexPath) {
 //            if cell.accessoryType == .checkmark {
 //                cell.accessoryType = .none
 //                displayArr[indexPath.row].isChecked = false
-<<<<<<< HEAD
+
 //                
 //                self.myPlaces.saveSelectedPlaces(places: displayArr)
 //                
-=======
+
 //
 //                self.myPlaces.saveSelectedPlaces(places: displayArr)
 //
->>>>>>> 4612f8fbc31a77acdb9ad348c9db44b06715f3dd
+
 //                if !self.myPlaces.anySelections() {
 //                    self.nextButton.isEnabled = false
 //                }
@@ -461,18 +405,13 @@ import FirebaseDatabase
 //}
 //
 //extension HomeViewController: GMSAutocompleteViewControllerDelegate {
-<<<<<<< HEAD
-//    
-=======
-//
->>>>>>> 4612f8fbc31a77acdb9ad348c9db44b06715f3dd
+
 //    func viewController(_ viewController: GMSAutocompleteViewController, didAutocompleteWith place: GMSPlace) {
 //        let space = ""
 //        print("Place name: \(place.name)")
 //        print("Place address: \(place.formattedAddress ?? space)")
 //        print("Place attributions: \(String(describing: place.attributions))")
-<<<<<<< HEAD
-//        
+
 //        print("\(place.coordinate)")
 //        
 //        selectedLatitude = place.coordinate.latitude
@@ -480,7 +419,7 @@ import FirebaseDatabase
 //        
 //        locationTextField.text = "\(place.formattedAddress ?? space)"
 //        
-=======
+
 //
 //        print("\(place.coordinate)")
 //
@@ -489,7 +428,7 @@ import FirebaseDatabase
 //
 //        locationTextField.text = "\(place.formattedAddress ?? space)"
 //
->>>>>>> 4612f8fbc31a77acdb9ad348c9db44b06715f3dd
+
 //        beachesButton.isHidden = false
 //        trailsButton.isHidden = false
 //        poolsButton.isHidden = false
@@ -505,9 +444,7 @@ import FirebaseDatabase
 //        placesTableView.isHidden = false
 //        natureImageView.isHidden = true
 //        creditsButton.isHidden = true
-<<<<<<< HEAD
-//        
-//        
+
 //        dismiss(animated: true, completion: nil)
 //    }
 //    
@@ -523,7 +460,7 @@ import FirebaseDatabase
 //        UIApplication.shared.isNetworkActivityIndicatorVisible = true
 //    }
 //    
-=======
+
 //
 //
 //        dismiss(animated: true, completion: nil)
@@ -541,15 +478,11 @@ import FirebaseDatabase
 //        UIApplication.shared.isNetworkActivityIndicatorVisible = true
 //    }
 //
->>>>>>> 4612f8fbc31a77acdb9ad348c9db44b06715f3dd
+
 //    func didUpdateAutocompletePredictions(_ viewController: GMSAutocompleteViewController) {
 //        UIApplication.shared.isNetworkActivityIndicatorVisible = false
 //    }
 //}
 //
 //
-<<<<<<< HEAD
-=======
 
-
->>>>>>> 4612f8fbc31a77acdb9ad348c9db44b06715f3dd
