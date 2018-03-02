@@ -23,6 +23,7 @@
 		A16BFBFB2003D744004317C5 /* HealthyHarvest.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = A16BFBF92003D744004317C5 /* HealthyHarvest.xcdatamodeld */; };
 		A16BFBFD2003D744004317C5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A16BFBFC2003D744004317C5 /* Assets.xcassets */; };
 		A16BFC002003D744004317C5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A16BFBFE2003D744004317C5 /* LaunchScreen.storyboard */; };
+		A1DF67052049B7CB002C8ECF /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A1DF67042049B7CA002C8ECF /* GoogleService-Info.plist */; };
 		A1F115EB20334B8C00A90F2F /* ListInformationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1F115EA20334B8C00A90F2F /* ListInformationViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -45,6 +46,7 @@
 		A16BFBFC2003D744004317C5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A16BFBFF2003D744004317C5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A16BFC012003D744004317C5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A1DF67042049B7CA002C8ECF /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		A1F115EA20334B8C00A90F2F /* ListInformationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListInformationViewController.swift; sourceTree = "<group>"; };
 		D481C741BBAE4F730CEC4A07 /* Pods-HealthyHarvest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HealthyHarvest.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HealthyHarvest/Pods-HealthyHarvest.debug.xcconfig"; sourceTree = "<group>"; };
 		FF650114685FDF0077CDB8BC /* Pods_HealthyHarvest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HealthyHarvest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -93,6 +95,7 @@
 			isa = PBXGroup;
 			children = (
 				A16BFBF22003D744004317C5 /* AppDelegate.swift */,
+				A1DF67042049B7CA002C8ECF /* GoogleService-Info.plist */,
 				A16BFBF42003D744004317C5 /* ViewController.swift */,
 				2D6B720F2026778B008256F0 /* SearchViewController.swift */,
 				A16BFBF62003D744004317C5 /* Main.storyboard */,
@@ -184,6 +187,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A10E524F2024CC820084B744 /* Events.storyboard in Resources */,
+				A1DF67052049B7CB002C8ECF /* GoogleService-Info.plist in Resources */,
 				A16BFC002003D744004317C5 /* LaunchScreen.storyboard in Resources */,
 				2D10DC54203497E000B38588 /* Login.storyboard in Resources */,
 				A16BFBFD2003D744004317C5 /* Assets.xcassets in Resources */,
