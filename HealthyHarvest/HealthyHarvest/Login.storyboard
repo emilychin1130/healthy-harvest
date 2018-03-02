@@ -19,7 +19,7 @@
         <!--Login View Controller-->
         <scene sceneID="NHp-xg-ZCd">
             <objects>
-                <viewController id="Qu6-q9-Aep" customClass="LoginViewController" sceneMemberID="viewController">
+                <viewController id="Qu6-q9-Aep" customClass="LoginViewController" customModule="HealthyHarvest" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="cbI-wK-48O">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -55,6 +55,9 @@
                                 <state key="normal" title="Register or Log In">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="loginButtonTapped:" destination="Qu6-q9-Aep" eventType="touchUpInside" id="pAC-sy-YVR"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="0.55376142497983583" green="0.88180872843045688" blue="0.66163834806731048" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -76,6 +79,9 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="IdD-fo-0QD"/>
                     </view>
+                    <connections>
+                        <outlet property="loginButton" destination="xFk-2x-V2Y" id="lU2-yH-mGQ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nNk-kU-zND" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
