@@ -48,7 +48,7 @@ class ListInformationViewController: UIViewController {
             }
             if (itemNameTextField.text?.isEmpty)! {
                 let alert = UIAlertController(title: "", message: "You forgot to add an item!" , preferredStyle: .alert)
-                alert.addAction(UIAlertAction(title: "Add a name", style: UIAlertActionStyle.default, handler: {(action) in alert.dismiss(animated: true, completion: nil) } ) )
+                alert.addAction(UIAlertAction(title: "Add an item", style: UIAlertActionStyle.default, handler: {(action) in alert.dismiss(animated: true, completion: nil) } ) )
                 self.present(alert, animated: true, completion: nil)
             } else {
                 let item = self.item ?? CoreDataHelper.newItem()
@@ -70,7 +70,7 @@ class ListInformationViewController: UIViewController {
         if let item = item {
             itemNameTextField.text = item.item
         } else {
-            habitNameTextField.text = ""
+            itemNameTextField.text = ""
         }
     }
     
