@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Qu6-q9-Aep">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="sYN-Cl-Rhy">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -79,13 +79,104 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="IdD-fo-0QD"/>
                     </view>
+                    <navigationItem key="navigationItem" id="Keu-4C-SHf"/>
                     <connections>
                         <outlet property="loginButton" destination="xFk-2x-V2Y" id="lU2-yH-mGQ"/>
+                        <segue destination="zSY-Wo-LPR" kind="show" identifier="toCreateUsername" id="Ny9-BJ-dov"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nNk-kU-zND" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="128.80000000000001" y="169.56521739130437"/>
+            <point key="canvasLocation" x="468" y="169.56521739130437"/>
+        </scene>
+        <!--Create Username View Controller-->
+        <scene sceneID="wV4-ie-qKC">
+            <objects>
+                <viewController id="zSY-Wo-LPR" customClass="CreateUsernameViewController" customModule="HealthyHarvest" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ECm-5I-xe2">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="18" translatesAutoresizingMaskIntoConstraints="NO" id="HWD-CG-9qn">
+                                <rect key="frame" x="35" y="65" width="305" height="200"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Create Username" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3fu-3S-a0m">
+                                        <rect key="frame" x="55" y="0.0" width="195" height="34"/>
+                                        <fontDescription key="fontDescription" name="PingFangSC-Regular" family="PingFang SC" pointSize="24"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Add a username to begin." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eAs-5O-8yS">
+                                        <rect key="frame" x="50.5" y="52" width="204" height="24"/>
+                                        <fontDescription key="fontDescription" name="PingFangSC-Regular" family="PingFang SC" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Username" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="cix-rG-QJP">
+                                        <rect key="frame" x="0.0" y="94" width="305" height="44"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="44" id="YTn-mT-SzK"/>
+                                        </constraints>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" name="PingFangSC-Regular" family="PingFang SC" pointSize="17"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aWb-Gf-azz">
+                                        <rect key="frame" x="0.0" y="156" width="305" height="44"/>
+                                        <color key="backgroundColor" red="0.55376142500000003" green="0.88180872840000002" blue="0.6616383481" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="44" id="TWD-V5-xd6"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="PingFangSC-Semibold" family="PingFang SC" pointSize="17"/>
+                                        <state key="normal" title="Next">
+                                            <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="nextButtonTapped:" destination="zSY-Wo-LPR" eventType="touchUpInside" id="rje-AJ-7qg"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="cix-rG-QJP" firstAttribute="leading" secondItem="HWD-CG-9qn" secondAttribute="leading" id="QNh-nd-djo"/>
+                                    <constraint firstAttribute="trailing" secondItem="aWb-Gf-azz" secondAttribute="trailing" id="U4A-97-dGY"/>
+                                    <constraint firstItem="aWb-Gf-azz" firstAttribute="leading" secondItem="HWD-CG-9qn" secondAttribute="leading" id="dOg-Nt-WnI"/>
+                                    <constraint firstAttribute="trailing" secondItem="cix-rG-QJP" secondAttribute="trailing" id="fed-Zy-2hu"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="HWD-CG-9qn" firstAttribute="top" secondItem="bQ9-Dq-9U8" secondAttribute="top" constant="45" id="GlU-hp-zRT"/>
+                            <constraint firstItem="HWD-CG-9qn" firstAttribute="leading" secondItem="bQ9-Dq-9U8" secondAttribute="leading" constant="35" id="bGL-Jp-3Nh"/>
+                            <constraint firstItem="bQ9-Dq-9U8" firstAttribute="trailing" secondItem="HWD-CG-9qn" secondAttribute="trailing" constant="35" id="cFt-De-cu1"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="bQ9-Dq-9U8"/>
+                    </view>
+                    <connections>
+                        <outlet property="nextButton" destination="aWb-Gf-azz" id="20R-4W-fre"/>
+                        <outlet property="usernameTextField" destination="cix-rG-QJP" id="kUg-be-orh"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="OPl-w0-HA3" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1231.2" y="167.76611694152925"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="EcU-z1-4ZF">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" navigationBarHidden="YES" id="sYN-Cl-Rhy" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="lbi-qO-0Dd">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="Qu6-q9-Aep" kind="relationship" relationship="rootViewController" id="RdJ-uQ-sC1"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="poC-Cf-JYo" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-322" y="170"/>
         </scene>
     </scenes>
 </document>

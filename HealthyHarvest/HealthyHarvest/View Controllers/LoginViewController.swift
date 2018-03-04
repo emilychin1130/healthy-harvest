@@ -19,6 +19,7 @@ class LoginViewController: UIViewController{
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        loginButton.layer.cornerRadius = 6
     }
     
     @IBAction func loginButtonTapped(_ sender: UIButton) {
@@ -38,11 +39,27 @@ class LoginViewController: UIViewController{
 extension LoginViewController: FUIAuthDelegate {
     func authUI(_ authUI: FUIAuth, didSignInWith user: FIRUser?, error: Error?) {
         if let error = error {
-            assertionFailure("Error signing in: \(error.localizedDescription)")
+            print(error)
             return
+            //assertionFailure("Error signing in: \(error.localizedDescription)")
+            //return
         }
+
+         let userRef = reference().child("users").child(user.uid)
+        // 1
+        userRef.setValue(["username": "chase"])
         
-        print("handle user signup / login")
+        userRef.observeSingleEvent(of: .value, with: { [unowned self] (snapshot) in
+    if let _ = User(snapshot: snapshot) {
+        let storyboard = UIStoryboard(name: "Main", bundle: .main)
+
+        if let initialViewController = storyboard.instantiateInitialViewController() {
+            self.view.window?.rootViewController = initialViewController
+            self.view.window?.makeKeyAndVisible()
+        }
+    } else {
+        self.performSegue(withIdentifier: "toCreateUsername", sender: self)
+    }
+})
     }
 }
-
