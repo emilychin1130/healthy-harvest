@@ -62,7 +62,7 @@ class ListViewController: UIViewController, UITableViewDataSource, UITableViewDe
             if cell?.accessoryType == .checkmark {
                 cell?.accessoryType = .none
 //                habit.days -= 1
-                item.checked = false
+                //item.item
                 CoreDataHelper.saveItem()
 //                general.points -= (1 + Int(habit.days))
 //                if general.points < 0 {
@@ -73,7 +73,7 @@ class ListViewController: UIViewController, UITableViewDataSource, UITableViewDe
             } else {
                 cell?.accessoryType = .checkmark
 //                habit.days += 1
-                item.checked = true
+                //item.item?.isEmpty = true
                 CoreDataHelper.saveItem()
  //               general.points += Int(habit.days)
  //           }
@@ -94,7 +94,7 @@ class ListViewController: UIViewController, UITableViewDataSource, UITableViewDe
         
         cell.nameOfDescription.text = "\(item.descript)"
         
-        if item.checked == true {
+        if item.item?.isEmpty == true {
             cell.accessoryType = .checkmark
         } else
         {
