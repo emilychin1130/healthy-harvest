@@ -15,6 +15,7 @@
 		2D71AB25204BD19000C70BA4 /* CreateUsernameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D71AB24204BD19000C70BA4 /* CreateUsernameViewController.swift */; };
 		2D71AB27204BD82600C70BA4 /* UserService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D71AB26204BD82600C70BA4 /* UserService.swift */; };
 		2D71AB2A204BDA3F00C70BA4 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D71AB29204BDA3F00C70BA4 /* User.swift */; };
+		2D71AB2E204C6D4C00C70BA4 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D71AB2D204C6D4C00C70BA4 /* Constants.swift */; };
 		A10E524D2024CC590084B744 /* Search.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A10E524B2024CC590084B744 /* Search.storyboard */; };
 		A10E524F2024CC820084B744 /* Events.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A10E524E2024CC820084B744 /* Events.storyboard */; };
 		A10E52522024CCAB0084B744 /* List.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A10E52502024CCAB0084B744 /* List.storyboard */; };
@@ -38,6 +39,7 @@
 		2D71AB24204BD19000C70BA4 /* CreateUsernameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateUsernameViewController.swift; sourceTree = "<group>"; };
 		2D71AB26204BD82600C70BA4 /* UserService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserService.swift; sourceTree = "<group>"; };
 		2D71AB29204BDA3F00C70BA4 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		2D71AB2D204C6D4C00C70BA4 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		37491D21151E13A58E42A0CD /* Pods-HealthyHarvest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HealthyHarvest.release.xcconfig"; path = "Pods/Target Support Files/Pods-HealthyHarvest/Pods-HealthyHarvest.release.xcconfig"; sourceTree = "<group>"; };
 		A10E524C2024CC590084B744 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Search.storyboard; sourceTree = "<group>"; };
 		A10E524E2024CC820084B744 /* Events.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Events.storyboard; sourceTree = "<group>"; };
@@ -107,6 +109,7 @@
 			children = (
 				A16BFBFE2003D744004317C5 /* Launch.storyboard */,
 				2D71AB22204BC9B500C70BA4 /* GoogleService-Info.plist */,
+				2D71AB2D204C6D4C00C70BA4 /* Constants.swift */,
 				A16BFC012003D744004317C5 /* Info.plist */,
 			);
 			path = "Supporting Files";
@@ -339,6 +342,7 @@
 				A16BFBFB2003D744004317C5 /* HealthyHarvest.xcdatamodeld in Sources */,
 				A10E52542024F8F30084B744 /* ListViewController.swift in Sources */,
 				2D71AB27204BD82600C70BA4 /* UserService.swift in Sources */,
+				2D71AB2E204C6D4C00C70BA4 /* Constants.swift in Sources */,
 				A10E525820267E370084B744 /* ListTableViewCell.swift in Sources */,
 				2D71AB2A204BDA3F00C70BA4 /* User.swift in Sources */,
 				A16BFBF32003D744004317C5 /* AppDelegate.swift in Sources */,

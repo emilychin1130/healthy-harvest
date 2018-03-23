@@ -14,11 +14,7 @@ import UIKit
 //import SwiftyJSON
 import FirebaseDatabase
 
-
-//class HomeViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
-
-
-//class HomeViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
+class SearchViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
 //
 //    var displayArr = [Place]() {
 //        didSet {
@@ -482,7 +478,6 @@ import FirebaseDatabase
 //    func didUpdateAutocompletePredictions(_ viewController: GMSAutocompleteViewController) {
 //        UIApplication.shared.isNetworkActivityIndicatorVisible = false
 //    }
-//}
-//
-//
+}
+
 
