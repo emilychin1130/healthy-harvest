@@ -14,7 +14,7 @@ import UIKit
 //import SwiftyJSON
 import FirebaseDatabase
 
-class SearchViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
+class SearchViewController: UIViewController, UITableViewDelegate {
 //
 //    var displayArr = [Place]() {
 //        didSet {
