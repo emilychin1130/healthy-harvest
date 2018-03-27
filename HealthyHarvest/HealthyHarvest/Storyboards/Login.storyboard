@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="sYN-Cl-Rhy">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="sYN-Cl-Rhy">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13174"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -133,6 +133,7 @@
                                         </state>
                                         <connections>
                                             <action selector="nextButtonTapped:" destination="zSY-Wo-LPR" eventType="touchUpInside" id="rje-AJ-7qg"/>
+                                            <segue destination="e0H-go-n2s" kind="show" identifier="searchSeque" id="7Ve-Pi-f2d"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -160,6 +161,16 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="OPl-w0-HA3" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1231.2" y="167.76611694152925"/>
+        </scene>
+        <!--SearchViewController-->
+        <scene sceneID="1Ti-bl-pnp">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Search" referencedIdentifier="SearchViewController" id="e0H-go-n2s" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="EZh-Iz-ER2"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iRe-yL-Tjp" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1863" y="175"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="EcU-z1-4ZF">

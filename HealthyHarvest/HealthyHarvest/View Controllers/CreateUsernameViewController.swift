@@ -23,7 +23,7 @@ class CreateUsernameViewController: UIViewController {
     }
     
     override func shouldPerformSegue(withIdentifier identifier: String, sender: Any?) -> Bool {
-        return false
+        return true
     }
     
     @IBAction func nextButtonTapped(_ sender: UIButton) {
