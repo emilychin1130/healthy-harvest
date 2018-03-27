@@ -98,10 +98,10 @@ struct UserService {
                 dispatchGroup.enter()
                 
                 // 5
-//                InviteService.isUserInvited(user) { (isInvited) in
-//                    user.isInvited = isInvited
-//                    dispatchGroup.leave()
-                //}
+                InviteService.isUserInvited(user) { (isInvited) in
+                    user.isInvited = isInvited
+                   dispatchGroup.leave()
+                }
             }
             
             // 6

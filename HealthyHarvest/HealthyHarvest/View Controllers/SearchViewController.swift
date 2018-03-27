@@ -15,9 +15,9 @@ import UIKit
 import FirebaseDatabase
 
 class SearchViewController: UIViewController, UITableViewDelegate {
-//
-//    var displayArr = [Place]() {
-//        didSet {
+
+//var displayArr = [Place]() {
+//       didSet {
 //            self.placesTableView.reloadData()
 //        }
 //    }
