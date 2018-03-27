@@ -16,6 +16,7 @@
 		2D71AB27204BD82600C70BA4 /* UserService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D71AB26204BD82600C70BA4 /* UserService.swift */; };
 		2D71AB2A204BDA3F00C70BA4 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D71AB29204BDA3F00C70BA4 /* User.swift */; };
 		2D71AB2E204C6D4C00C70BA4 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D71AB2D204C6D4C00C70BA4 /* Constants.swift */; };
+		2DDCBD912069E99200A771BF /* InviteService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DDCBD902069E99200A771BF /* InviteService.swift */; };
 		A10E524D2024CC590084B744 /* Search.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A10E524B2024CC590084B744 /* Search.storyboard */; };
 		A10E524F2024CC820084B744 /* Events.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A10E524E2024CC820084B744 /* Events.storyboard */; };
 		A10E52522024CCAB0084B744 /* List.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A10E52502024CCAB0084B744 /* List.storyboard */; };
@@ -23,7 +24,6 @@
 		A10E52562024FFAE0084B744 /* CoreDataHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = A10E52552024FFAE0084B744 /* CoreDataHelper.swift */; };
 		A10E525820267E370084B744 /* ListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A10E525720267E370084B744 /* ListTableViewCell.swift */; };
 		A16BFBF32003D744004317C5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A16BFBF22003D744004317C5 /* AppDelegate.swift */; };
-		A16BFBF52003D744004317C5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A16BFBF42003D744004317C5 /* ViewController.swift */; };
 		A16BFBF82003D744004317C5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A16BFBF62003D744004317C5 /* Main.storyboard */; };
 		A16BFBFB2003D744004317C5 /* HealthyHarvest.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = A16BFBF92003D744004317C5 /* HealthyHarvest.xcdatamodeld */; };
 		A16BFBFD2003D744004317C5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A16BFBFC2003D744004317C5 /* Assets.xcassets */; };
@@ -40,6 +40,7 @@
 		2D71AB26204BD82600C70BA4 /* UserService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserService.swift; sourceTree = "<group>"; };
 		2D71AB29204BDA3F00C70BA4 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		2D71AB2D204C6D4C00C70BA4 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		2DDCBD902069E99200A771BF /* InviteService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InviteService.swift; sourceTree = "<group>"; };
 		37491D21151E13A58E42A0CD /* Pods-HealthyHarvest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HealthyHarvest.release.xcconfig"; path = "Pods/Target Support Files/Pods-HealthyHarvest/Pods-HealthyHarvest.release.xcconfig"; sourceTree = "<group>"; };
 		A10E524C2024CC590084B744 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Search.storyboard; sourceTree = "<group>"; };
 		A10E524E2024CC820084B744 /* Events.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Events.storyboard; sourceTree = "<group>"; };
@@ -49,7 +50,6 @@
 		A10E525720267E370084B744 /* ListTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListTableViewCell.swift; sourceTree = "<group>"; };
 		A16BFBEF2003D744004317C5 /* HealthyHarvest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HealthyHarvest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A16BFBF22003D744004317C5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		A16BFBF42003D744004317C5 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		A16BFBF72003D744004317C5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A16BFBFA2003D744004317C5 /* HealthyHarvest.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = HealthyHarvest.xcdatamodel; sourceTree = "<group>"; };
 		A16BFBFC2003D744004317C5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -127,6 +127,7 @@
 			isa = PBXGroup;
 			children = (
 				2D71AB26204BD82600C70BA4 /* UserService.swift */,
+				2DDCBD902069E99200A771BF /* InviteService.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -170,7 +171,6 @@
 			isa = PBXGroup;
 			children = (
 				A16BFBF22003D744004317C5 /* AppDelegate.swift */,
-				A16BFBF42003D744004317C5 /* ViewController.swift */,
 				A16BFBFC2003D744004317C5 /* Assets.xcassets */,
 				A16BFBF92003D744004317C5 /* HealthyHarvest.xcdatamodeld */,
 				2D08E71F204BBB73000DCC17 /* Storyboards */,
@@ -338,13 +338,13 @@
 				2D10DC56203498E400B38588 /* LoginViewController.swift in Sources */,
 				2D6B72102026778B008256F0 /* SearchViewController.swift in Sources */,
 				A10E52562024FFAE0084B744 /* CoreDataHelper.swift in Sources */,
-				A16BFBF52003D744004317C5 /* ViewController.swift in Sources */,
 				A16BFBFB2003D744004317C5 /* HealthyHarvest.xcdatamodeld in Sources */,
 				A10E52542024F8F30084B744 /* ListViewController.swift in Sources */,
 				2D71AB27204BD82600C70BA4 /* UserService.swift in Sources */,
 				2D71AB2E204C6D4C00C70BA4 /* Constants.swift in Sources */,
 				A10E525820267E370084B744 /* ListTableViewCell.swift in Sources */,
 				2D71AB2A204BDA3F00C70BA4 /* User.swift in Sources */,
+				2DDCBD912069E99200A771BF /* InviteService.swift in Sources */,
 				A16BFBF32003D744004317C5 /* AppDelegate.swift in Sources */,
 				2D71AB25204BD19000C70BA4 /* CreateUsernameViewController.swift in Sources */,
 				A1F115EB20334B8C00A90F2F /* ListInfoViewController.swift in Sources */,

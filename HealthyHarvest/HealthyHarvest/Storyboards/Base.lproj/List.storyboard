@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="fOt-QL-cMf">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="fOt-QL-cMf">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13174"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -29,7 +29,7 @@
                                         <rect key="frame" x="0.0" y="28" width="375" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="ILy-xF-5qG" id="ucF-ta-cpT">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" alignment="top" translatesAutoresizingMaskIntoConstraints="NO" id="aGh-ZM-gK2">
@@ -149,11 +149,13 @@
             </objects>
             <point key="canvasLocation" x="2291" y="1293"/>
         </scene>
-        <!--Item-->
+        <!--Navigation Controller-->
         <scene sceneID="p0w-HS-Wn6">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="fOt-QL-cMf" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="MLo-Wj-jIS"/>
+                    <tabBarItem key="tabBarItem" title="" image="tab_plus_black" id="MLo-Wj-jIS">
+                        <inset key="imageInsets" minX="0.0" minY="7" maxX="0.0" maxY="-7"/>
+                    </tabBarItem>
                     <toolbarItems/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="jp8-41-Z20">
@@ -170,6 +172,9 @@
             <point key="canvasLocation" x="608.79999999999995" y="1290.4047976011996"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="tab_plus_black" width="25" height="25"/>
+    </resources>
     <inferredMetricsTieBreakers>
         <segue reference="IsH-mr-NYQ"/>
     </inferredMetricsTieBreakers>

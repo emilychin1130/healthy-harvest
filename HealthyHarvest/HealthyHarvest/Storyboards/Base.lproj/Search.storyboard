@@ -18,7 +18,7 @@
         <!--Markets-->
         <scene sceneID="0gA-j0-508">
             <objects>
-                <viewController id="1Bd-F1-QRO" sceneMemberID="viewController">
+                <viewController id="1Bd-F1-QRO" customClass="SearchViewController" customModule="HealthyHarvest" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="euw-Gm-6oi"/>
                         <viewControllerLayoutGuide type="bottom" id="uvj-sV-cwa"/>
@@ -67,7 +67,7 @@
         <!--Invite-->
         <scene sceneID="qZ4-sc-E0J">
             <objects>
-                <viewController id="iHZ-jI-aeb" sceneMemberID="viewController">
+                <viewController id="iHZ-jI-aeb" customClass="InviteViewController" customModule="HealthyHarvest" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="TTQ-Th-XjV"/>
                         <viewControllerLayoutGuide type="bottom" id="gL6-ek-So9"/>
@@ -151,11 +151,13 @@
             </objects>
             <point key="canvasLocation" x="2637.5999999999999" y="-169.56521739130437"/>
         </scene>
-        <!--Item-->
+        <!--Navigation Controller-->
         <scene sceneID="QOz-kC-b90">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Y3C-Ld-cTQ" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="4HJ-tC-IbH"/>
+                    <tabBarItem key="tabBarItem" title="" image="tab_home_black" id="4HJ-tC-IbH">
+                        <inset key="imageInsets" minX="0.0" minY="7" maxX="0.0" maxY="-7"/>
+                    </tabBarItem>
                     <toolbarItems/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="sX6-u8-04k">
@@ -172,4 +174,7 @@
             <point key="canvasLocation" x="1020" y="-168.6656671664168"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="tab_home_black" width="25" height="25"/>
+    </resources>
 </document>

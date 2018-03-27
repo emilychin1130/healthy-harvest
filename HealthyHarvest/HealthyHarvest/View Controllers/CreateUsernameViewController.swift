@@ -15,9 +15,15 @@ class CreateUsernameViewController: UIViewController {
     @IBOutlet weak var usernameTextField: UITextField!
     @IBOutlet weak var nextButton: UIButton!
     
+    var errInCreatingUser = false
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         nextButton.layer.cornerRadius = 6
+    }
+    
+    override func shouldPerformSegue(withIdentifier identifier: String, sender: Any?) -> Bool {
+        return false
     }
     
     @IBAction func nextButtonTapped(_ sender: UIButton) {
@@ -28,7 +34,7 @@ class CreateUsernameViewController: UIViewController {
         UserService.create(firUser, username: username) { (user, error) in
             if (error?.characters.count ?? 0) > 0 {
                 
-                //self = true
+                self.errInCreatingUser = true
                 
                 let alert = UIAlertView()
                 alert.title = "Username already taken!"
@@ -40,7 +46,7 @@ class CreateUsernameViewController: UIViewController {
             }
             
             if user == nil {
-                //self.errInCreatingUser = true
+                self.errInCreatingUser = true
                 
                 let alert = UIAlertController(title: "Error creating user", message: "Please try again.", preferredStyle: UIAlertControllerStyle.alert)
                 
@@ -53,11 +59,11 @@ class CreateUsernameViewController: UIViewController {
             
             User.setCurrent(user!, writeToUserDefaults: true)
             
-            /*
-            let initialViewController = UIStoryboard.initialViewController(for: .main)
-            self.view.window?.rootViewController = initialViewController
-            self.view.window?.makeKeyAndVisible()
- */
+            
+//            let initialViewController = UIStoryboard.initialViewController(for: .main)
+//            self.view.window?.rootViewController = initialViewController
+//            self.view.window?.makeKeyAndVisible()
+ 
         }
     }
 }
